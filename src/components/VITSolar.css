@@ -1,0 +1,129 @@
+.vit-solar-container {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #2196F3 0%, #4caf93 100%);
+  padding: 80px 20px 40px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.vit-solar-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  position: relative;
+  color: white;
+}
+
+.vit-solar-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 3px;
+  background-color: white;
+}
+
+.vit-solar-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  opacity: 0.9;
+  color: white;
+}
+
+.vit-solar-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.vit-solar-section {
+  margin-bottom: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.vit-solar-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  color: white;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.vit-solar-section p {
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.vit-solar-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.vit-solar-list li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.vit-stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.vit-stat-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 1.2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.vit-stat-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.vit-stat-card h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.vit-stat-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 768px) {
+  .vit-solar-title {
+    font-size: 2rem;
+  }
+  
+  .vit-solar-section {
+    padding: 1.2rem;
+  }
+  
+  .vit-stats-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .vit-stats-container {
+    grid-template-columns: 1fr;
+  }
+}
