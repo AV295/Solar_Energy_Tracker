@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: vite-frontend
-          image: my-vite-app
+          image: av80/my-vite-app:latest
           imagePullPolicy: Never     # <--- ADD THIS LINE
           ports:
             - containerPort: 80
